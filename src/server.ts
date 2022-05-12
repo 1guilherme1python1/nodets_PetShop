@@ -20,7 +20,7 @@ server.use(mainRoutes);
 
 
 server.use((req:Request, res:Response)=>{
-    res.send('Página não encontrada!').status(404);
+    res.render('pages/404');
 })
 //escutador de porta
 server.listen(80)
